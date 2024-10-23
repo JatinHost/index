@@ -5,7 +5,7 @@ const app = express()
 const port = 3000
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/formData')
+mongoose.connect('mongodb://0.0.0.0:27017/formData')
     .then(() => console.log('Connected to MongoDB'))
     .catch(err => console.error('Database connection error:', err));
 
