@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Our Institute</title>
+    <style>
+        .types:hover{
+            color: #1565f7
+        }
+    </style>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="alert">
+        <Span>Your Form has been recieved</Span>
+        <span id="close"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+          </svg></span>
+    </div>
+    <nav>
+        <div class="mnav">
+           <h1>Dev Yoga</h1>
+        </div>
+        <div class="nav">
+            <div>
+                <a href="/" class="active deactive">Home</a>
+            </div>
+            <div class="dropdown">
+                <a  class="deactive">Course</a>
+                <div class="ul">
+                    <div class="adrop">
+                        <a class="deactive">Yoga Program</a>
+                        <div class="ol">
+                            <a href="/Beginner"class="deactive ">Beginner</a>
+                            <a href="/Intermediate"class="deactive">Intermediate</a>
+                            <a href="/Advanced"class="deactive">Advanced</a>
+                        </div>      
+                    </div>
+                    <a href="/Therepy"class="deactive">Therepy</a>
+                </div>
+            </div >
+            <div>
+                <a href="#" class="deactive">Gallery</a>
+            </div>
+            <div>
+                <a href="/contact" class="deactive">Contact</a>
+            </div>
+    </div>
+    </nav>
+    <div class="casural ">
+        <img src="img/trial3-q9fsgvkea-transformed-transformed.jpeg" alt="Later" >
+    </div>
+    <hr>
+    <div class="intro">
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, mollitia facilis. Nisi, libero! Quibusdam harum tenetur exercitationem quo autem quis. Autem natus aliquid aliquam velit ducimus blanditiis deleniti reiciendis est consectetur, vero expedita maxime aperiam iusto dolor quo.</p>
+    </div>
+    <hr>
+    <div class="intro">
+        <p>Perspiciatis et, similique aut, eos alias, reiciendis rerum porro doloremque tempora dignissimos neque culpa. Debitis, vitae? A earum laudantium aut libero, illum alias est optio architecto possimus at nostrum ducimus sequi quia quasi fugiat similique consectetur quos repellat exercitationem quisquam culpa, blanditiis autem distinctio sed.</p>
+    </div>
+    <footer>
+        <h1>Dev Yoga</h1>
+        <hr id="underline">
+        <div class="address">
+            <div>
+                <span class="phone dis" >Call:</span>
+                <span class="phone">9818878567 / 9818878567</span>
+            </div>
+            <span class="phone" id="divide">|</span>
+            <div>
+                <span class="phone dis" >Email:</span>
+                <a class="phone" href="mailto:dangipooja.1984@gmail.com">dangipooja.1984@gmail.com</a>
+            </div>
+        </div>
+        <hr>
+        <p id="address">House No-15 ,Shyam Vihar PH-1,  New Delhi-110043 </p>
+        <div class="media">
+            <a href="#"><img src="img/insta.png" alt="" ></a>
+            <a href="#"><img src="img/face.png" alt="" ></a>
+            <a href="#"><img src="img/what.png" alt="" ></a>
+            <a href="#"><img src="img/twit.png" alt="" ></a>
+        </div>
+
+        <div class="copy" >
+            <a href="#"> Terms & Condition </a>
+            <span>|</span>
+            <a href="#"> Privacy & Policy </a>
+        </div>
+        <div class="address">
+            <p>Coyright &copy; 2024 Dev Institute. All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    const alerts  = document.querySelector(".alert")
+    let OG = document.querySelector(".active")
+    document.querySelectorAll(".deactive").forEach(e => {
+        e.addEventListener("mouseover", ()=>{
+            document.querySelector("a.active").classList.remove("active")
+            e.classList.add("active")
+        })
+        e.addEventListener("mouseout",()=>{
+            document.querySelector("a.active").classList.remove("active")
+            OG.classList.add("active")
+        })
+    });
+    
+    // Function to get query parameters
+    function getQueryParam(param) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(param);
+    }
+    
+    // Check if there's a success message in the URL
+    const message = getQueryParam('message');
+    if (message === 'success') {
+        // Display an alert
+        alerts.style.display = "flex"
+    }
+
+
+    let close = document.querySelector("#close")
+    close.addEventListener("click" ,()=>{
+        alerts.style.display="none"
+    })
+    
+</script>

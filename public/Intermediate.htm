@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Our Institute</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/yoga.css">
+</head>
+<body>
+    <nav>
+        <div class="mnav">
+           <h1>Dev Yoga</h1>
+        </div>
+        <div class="nav">
+            <div>
+                <a href="/" class="deactive">Home</a>
+            </div>
+            <div class="dropdown">
+                <a  class="deactive">Course</a>
+                <div class="ul">
+                    <div class="adrop">
+                        <a class="deactive">Yoga Program</a>
+                        <div class="ol">
+                            <a href="/Beginner"class="deactive ">Beginner</a>
+                            <a href="/Intermediate"class="active deactive">Intermediate</a>
+                            <a href="/Advanced"class="deactive">Advanced</a>
+                        </div>      
+                    </div>
+                    <a href="/Therepy"class="deactive">Therepy</a>
+                </div>
+            </div >
+            <div>
+                <a href="#" class="deactive">Gallery</a>
+            </div>
+            <div>
+                <a href="/contact" class="deactive">Contact</a>
+            </div>
+    </div>
+    </nav>
+    <div class="about">
+        <div class="write">
+            <h2>Intermediate Regular Classes</h2>
+            <span><strong>Days:</strong>All days except Saturday & Sunday</span>
+            <span><strong>Timing:</strong>9:00 to 10:00</span>
+            <span><strong>Fee:</strong>₹1500</span>
+            <p>Atleast 3 Month of attendence is required for Changing your life & Experience the difference better then Beginner</p>
+            <a href="register.htm"><button>Register</button></a>
+        </div>
+        <div class="img">
+            <img src="img/yoga int.jpeg" alt="">
+        </div>
+    </div>
+    
+    <footer>
+        <h1>Dev Yoga</h1>
+        <hr id="underline">
+        <div class="address">
+            <div>
+                <span class="phone dis" >Call:</span>
+                <span class="phone">9818878567 / 9818878567</span>
+            </div>
+            <span class="phone" id="divide">|</span>
+            <div>
+                <span class="phone dis" >Email:</span>
+                <a class="phone" href="mailto:dangipooja.1984@gmail.com">dangipooja.1984@gmail.com</a>
+            </div>
+        </div>
+        <hr>
+        <p id="address">House No-15 ,Shyam Vihar PH-1,  New Delhi-110043 </p>
+        <div class="media">
+            <a href="#"><img src="img/insta.png" alt="" ></a>
+            <a href="#"><img src="img/face.png" alt="" ></a>
+            <a href="#"><img src="img/what.png" alt="" ></a>
+            <a href="#"><img src="img/twit.png" alt="" ></a>
+        </div>
+
+        <div class="copy" >
+            <a href="#"> Terms & Condition </a>
+            <span>|</span>
+            <a href="#"> Privacy & Policy </a>
+        </div>
+        <div class="address">
+            <p>Coyright &copy; 2024 Dev Institute. All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    let OG = document.querySelector(".active")
+    document.querySelectorAll(".deactive").forEach(e => {
+        e.addEventListener("mouseover", ()=>{
+            document.querySelector("a.active").classList.remove("active")
+            e.classList.add("active")
+        })
+        e.addEventListener("mouseout",()=>{
+            document.querySelector("a.active").classList.remove("active")
+            OG.classList.add("active")
+        })
+    });
+
+    
+</script>

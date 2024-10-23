@@ -1,0 +1,206 @@
+/* body{
+    display: flex;
+    justify-content: center;
+
+} */
+form{
+    background-color: #293bce;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+    h1{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 46px;
+    }
+        i{
+            color: whitesmoke;
+            display: block;
+            font-size: 21.4px;
+            margin: 13px 8px 0px 8px;
+        }
+    .input{
+        margin-left: 7px;
+        margin-bottom: 21px;
+    }
+        form p{
+            color: white;
+            margin: 9px 0px 9px 0px;
+            font-family: Poppins, sans-serif;
+            text-align: center;
+        }
+            input[type=text],input[type=email],input[type=number]{
+                margin: 0px;
+                margin-left: 4px;
+                background-color: white;
+                font-family: Poppins, sans-serif;
+                border: 2px solid black;
+                border-radius: 5px;
+                
+                resize: none;
+                height: 18px;
+            }
+        input[type=submit]{
+            background-color: white;
+            border: 2px solid transparent;
+            cursor: pointer;
+            padding: 11px;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: transform .2s ;
+        }
+            input[type=submit]:hover{
+                transform: scale(1.1);
+            }
+    .full{
+        width: 93%;
+    }
+    .dupli{
+        display: flex; 
+        flex-direction: row;
+    }
+    .dupli input{
+        width: 91%;
+    }
+    h2 {
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+    h3{
+        font-size: 25px;
+        color: white;
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+    ol{
+        margin-top: 3vh;
+        margin-right: 2vh;
+    }
+    ol li{
+        color: white;
+        text-align: justify;
+    }
+    .disable{
+        background-color: white;
+        width: 90%;
+        height: 20.7px;
+        opacity: .7;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+    }
+    .dupli {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .disable span{
+        margin-left: 10px;
+    }
+    .disable svg{
+        margin-right: 10px;  
+    }
+    .select{
+        height: 24px;
+        width: 96%;
+        opacity: 1;
+    }
+    .time{
+        padding-left: 6px;
+        margin-left: 5px;
+        height: 26px;
+    }
+    option{
+        cursor: pointer;
+    }
+    @media (min-width:376px) {
+        
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 35px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        input[type=text],input[type=email],input[type=number]{
+            height: 19px;
+        }
+        
+        .disable{
+            height: 21px;
+        }
+        ol{
+            margin-right: 5vh;
+        }
+        input[type=submit]{
+            margin-left: 4vh;
+        }
+        .select{
+            height: 25px;
+            cursor: pointer;
+        }
+        .time{
+            height: 30px;
+        }
+    }
+@media (min-width: 476px) {
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    input[type=submit]{
+        margin-left: 6vh;
+    }
+    input[type=text],input[type=email],input[type=number]{
+        height: 26px;
+    }
+    .full{
+        width: 96%;
+    }
+    .disable{
+        width: 93%;
+        height: 27px;
+    }
+    .select{
+        width: 94%;
+        height: 32px;
+    }
+    ol{
+        margin-right: 10vh;
+    }
+}
+@media (min-width: 769px) {
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    input[type=submit]{
+        margin-left: 8vh;
+    }
+    input[type=text],input[type=email],input[type=number]{
+        height: 30px;
+    }
+    .disable{
+        height: 32px;
+    }
+    .select{
+        height: 35px;
+    }
+}

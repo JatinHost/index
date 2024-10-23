@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Our Institute</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/yoga.css">
+</head>
+<body>
+    <nav>
+        <div class="mnav">
+           <h1>Dev Yoga</h1>
+        </div>
+        <div class="nav">
+            <div>
+                <a href="/" class="deactive">Home</a>
+            </div>
+            <div class="dropdown">
+                <a  class="deactive">Course</a>
+                <div class="ul">
+                    <div class="adrop">
+                        <a class="deactive">Yoga Program</a>
+                        <div class="ol">
+                            <a href="/Beginner"class="deactive ">Beginner</a>
+                            <a href="/Intermediate"class="deactive">Intermediate</a>
+                            <a href="/Advanced"class="deactive">Advanced</a>
+                        </div>      
+                    </div>
+                    <a href="/Therepy"class="active deactive">Therepy</a>
+                </div>
+            </div >
+            <div>
+                <a href="#" class="deactive">Gallery</a>
+            </div>
+            <div>
+                <a href="/contact" class="deactive">Contact</a>
+            </div>
+    </div>
+    </nav>
+    <div class="about">
+        <div class="write">
+            <h2>Therapy Treatment</h2>
+            <span><strong>Days:</strong>Any Day</span>
+            <span><strong>Timing:</strong>Pre-Booking</span>
+            <span><strong>Fee:</strong>₹2500 For one day</span>
+            <p>Atleast 1 Month of attendence is required for Changing your life & Experience the difference</p>
+            <a href="register.htm"><button>Register</button></a>
+        </div>
+        <div class="img">
+            <img src="img/therapy.jpg" alt="">
+        </div>
+    </div>
+    <div class="intro">
+        <h1>About This Program</h1>
+        
+        <p>Therapy is a supportive process where individuals work with a trained professional to address mental and emotional challenges. It offers a safe space to explore thoughts, feelings, and behaviors, helping people manage issues like stress, anxiety, depression, and trauma. </p>
+        <p>Different types of therapy, such as Cognitive Behavioral Therapy (CBT) or Psychodynamic Therapy, focus on specific needs. Overall, therapy promotes personal growth, empowering people to live healthier, more fulfilling lives</p>
+        <p>We will give you miss call or email before 48 hours or before 2 days</p>
+    </div>
+    <footer>
+        <h1>Dev Yoga</h1>
+        <hr id="underline">
+        <div class="address">
+            <div>
+                <span class="phone dis" >Call:</span>
+                <span class="phone">9818878567 / 9818878567</span>
+            </div>
+            <span class="phone" id="divide">|</span>
+            <div>
+                <span class="phone dis" >Email:</span>
+                <a class="phone" href="mailto:dangipooja.1984@gmail.com">dangipooja.1984@gmail.com</a>
+            </div>
+        </div>
+        <hr>
+        <p id="address">House No-15 ,Shyam Vihar PH-1,  New Delhi-110043 </p>
+        <div class="media">
+            <a href="#"><img src="img/insta.png" alt="" ></a>
+            <a href="#"><img src="img/face.png" alt="" ></a>
+            <a href="#"><img src="img/what.png" alt="" ></a>
+            <a href="#"><img src="img/twit.png" alt="" ></a>
+        </div>
+
+        <div class="copy" >
+            <a href="#"> Terms & Condition </a>
+            <span>|</span>
+            <a href="#"> Privacy & Policy </a>
+        </div>
+        <div class="address">
+            <p>Coyright &copy; 2024 Dev Institute. All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    let OG = document.querySelector(".active")
+    document.querySelectorAll(".deactive").forEach(e => {
+        e.addEventListener("mouseover", ()=>{
+            document.querySelector("a.active").classList.remove("active")
+            e.classList.add("active")
+        })
+        e.addEventListener("mouseout",()=>{
+            document.querySelector("a.active").classList.remove("active")
+            OG.classList.add("active")
+        })
+    });
+
+    
+</script>
